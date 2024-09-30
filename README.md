@@ -22,28 +22,6 @@ Overview
 This project is designed to recognize hand gestures and use them to interact with the computer in real time. The gesture recognition is powered by a Convolutional Neural Network (CNN) that is trained on a dataset of hand gesture images. The project utilizes OpenCV for video capture and pre-processing, TensorFlow for model training and inference, and PyAutoGUI for performing system actions based on recognized gestures.
 
 
-Project Structure
-
-Hand_And_Gesture_Recognition/
-│
-├── DataSets/
-│   ├── Train/                  # Training images
-│   ├── Test/                   # Testing images
-│   ├── Validation/             # Validation images
-│   ├── Train.csv               # Labels for training images
-│   ├── Test.csv                # Labels for testing images
-│   └── Validation.csv          # Labels for validation images
-│
-├── main.py                      # Entry point for the application
-├── hand_detection.py            # Hand detection using OpenCV
-├── gesture_model.py             # CNN model architecture and training functions
-├── gesture_recognition.py       # Gesture recognition logic
-├── perform_actions.py           # Actions based on recognized gestures
-├── train_model.py               # Script to train the model using images and labels
-├── utils.py                     # Helper functions like data loading and preprocessing
-└── requirements.txt             # Dependencies
-
-
 Dataset
 The dataset used for training, testing, and validation consists of gesture images and their corresponding labels. The dataset should be organized as follows:
 
